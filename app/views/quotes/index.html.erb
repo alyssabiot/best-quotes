@@ -1,1 +1,11 @@
 <h1>Best JT Quotes</h1>
+
+<%= link_to "Submit a new quote", new_quote_path %>
+
+<ul>
+  <% @quotes.each do |quote| %>
+    <li>
+      <%= "#{quote.content} - #{quote.author} (#{quote.date.strftime("%d/%m/%Y")})" %>
+    </li>
+  <% end %>
+</ul>

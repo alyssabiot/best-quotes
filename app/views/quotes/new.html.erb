@@ -1,0 +1,31 @@
+<h1>Submit your quote of the day !</h1>
+
+<%= form_with model: @quote do |form| %>
+  <div>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+    <% @quote.errors.full_messages_for(:content).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %>
+    <% @quote.errors.full_messages_for(:author).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :date %><br>
+    <%= form.date_field :date %>
+    <% @quote.errors.full_messages_for(:date).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
