@@ -1,0 +1,13 @@
+.wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Fira Mono', monospace;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}

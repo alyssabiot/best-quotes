@@ -1,3 +1,19 @@
 // Place all the styles related to the Quotes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.btn-new-quote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quote-content {
+  font-weight: bold;
+}
+
+ul.quotes-list {
+  list-style: none;
+  li {
+    margin-bottom: 30px;
+  }
+}

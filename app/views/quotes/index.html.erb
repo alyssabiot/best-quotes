@@ -1,11 +1,18 @@
 <h1>Best JT Quotes</h1>
 
-<%= link_to "Submit a new quote", new_quote_path %>
-
-<ul>
+<ul class='quotes-list'>
   <% @quotes.each do |quote| %>
     <li>
-      <%= "#{quote.content} - #{quote.author} (#{quote.date.strftime("%d/%m/%Y")})" %>
+      <div class='quote-content'>
+        <i class="fas fa-quote-left"></i>
+        <%= quote.content %>
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <div>
+        <%= " #{quote.author} (#{quote.date.strftime("%d/%m/%Y")})" %>
+      </div>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Submit a new quote", new_quote_path, class: 'btn btn-success btn-new-quote float-right' %>
