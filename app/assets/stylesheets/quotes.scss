@@ -2,18 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.btn-new-quote {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .quote-content {
   font-weight: bold;
+  font-style: italic;
 }
 
 ul.quotes-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   li {
+    background-color: #F2F3F4;
+    border-radius: 4px;
+    padding: 10px 15px;
     margin-bottom: 30px;
   }
 }
