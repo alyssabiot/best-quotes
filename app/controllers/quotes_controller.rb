@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   def index
-    @quotes = Quote.all
+    @quotes = Quote.order(created_at: :desc).page(params[:page])
   end
 
   def new
