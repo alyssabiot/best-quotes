@@ -17,7 +17,6 @@
   }
 
   ul li {
-    font-family: 'Gochi Hand', cursive;
     margin:1em;
     height:15em;
     width:15em;
@@ -29,9 +28,10 @@
     -o-transform:rotate(-4deg);
     -moz-transform:rotate(-4deg);
     background:#ffc;
+    font-family: 'Caveat', cursive;
   }
 
-  // "randomly" tilt the quotes
+  // "randomly" style the quotes (tilt, color, handwriting)
   ul li:nth-child(even) {
     -o-transform:rotate(3deg);
     -webkit-transform:rotate(3deg);
@@ -39,6 +39,7 @@
     position:relative;
     top:5px;
     background:#ccf;
+    font-family: 'Indie Flower', cursive;
   }
   ul li:nth-child(4n) {
     -o-transform:rotate(-2deg);
@@ -47,6 +48,7 @@
     position:relative;
     top:-5px;
     background:#fcc;
+    font-family: 'Dancing Script', cursive;
   }
   ul li:nth-child(5n) {
     -o-transform:rotate(4deg);
@@ -55,6 +57,7 @@
     position:relative;
     top:-10px;
     background:#cfc;
+    font-family: 'Patrick Hand', cursive;
   }
 
   .quote-content {
