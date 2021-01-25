@@ -2,19 +2,67 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.quote-content {
-  font-weight: bold;
-  font-style: italic;
-}
+.quotes-list {
+  ul,li{
+    list-style:none;
+  }
 
-ul.quotes-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    background-color: #F2F3F4;
-    border-radius: 4px;
-    padding: 10px 15px;
-    margin-bottom: 30px;
+  ul{
+    margin-bottom: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+  }
+
+  ul li {
+    font-family: 'Gochi Hand', cursive;
+    margin:1em;
+    height:15em;
+    width:15em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -webkit-transform:rotate(-4deg);
+    -o-transform:rotate(-4deg);
+    -moz-transform:rotate(-4deg);
+    background:#ffc;
+  }
+
+  // "randomly" tilt the quotes
+  ul li:nth-child(even) {
+    -o-transform:rotate(3deg);
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    position:relative;
+    top:5px;
+    background:#ccf;
+  }
+  ul li:nth-child(4n) {
+    -o-transform:rotate(-2deg);
+    -webkit-transform:rotate(-2deg);
+    -moz-transform:rotate(-2deg);
+    position:relative;
+    top:-5px;
+    background:#fcc;
+  }
+  ul li:nth-child(5n) {
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:-10px;
+    background:#cfc;
+  }
+
+  .quote-content {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .quote-author {
+    font-size: 18px;
   }
 }

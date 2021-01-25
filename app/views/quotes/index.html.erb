@@ -1,19 +1,19 @@
 <h1>Best JT Quotes</h1>
 
-<ul class='quotes-list'>
-  <% @quotes.each do |quote| %>
-    <li>
-      <div class='quote-content'>
-        <i class="fas fa-quote-left"></i>
-        <%= quote.content %>
-        <i class="fas fa-quote-right"></i>
-      </div>
-      <div>
-        <%= " #{quote.author} (#{quote.date.strftime("%d/%m/%Y")})" %>
-      </div>
-    </li>
-  <% end %>
-</ul>
+<div class='quotes-list'>
+  <ul>
+    <% @quotes.each do |quote| %>
+      <li>
+        <div class='quote-content'>
+          <%= quote.content %>
+        </div>
+        <div class='quote-author'>
+          <%= "#{quote.author} (#{quote.date.strftime("%d/%m/%Y")})" %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
 
 <%= paginate @quotes %>
 
