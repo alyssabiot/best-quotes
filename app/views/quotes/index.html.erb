@@ -15,8 +15,8 @@
   </ul>
 </div>
 
-<%= paginate @quotes %>
 
-<div class='text-right'>
+<div class='actions'>
+  <%= paginate @quotes %>
   <%= link_to "Submit a new quote", new_quote_path, class: 'btn btn-success' %>
 </div>
